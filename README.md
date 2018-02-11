@@ -25,4 +25,4 @@ User can then select the final value.
  One of the solution I found was here. https://github.com/angular/angular.js/issues/6656/#issuecomment-77684151. There are two way to apply this code block to the INPUT widget bonitasoft provide. The first one is to modify INPUT widget, but because I don't want to touch any codes in the opened source code, I had to think another way and that's the second way. This way is to create a custom widget based on the basic INPUT widget. Then create a .js file and add this file into assets. Even though next version of Bonita BPM is available, just you need to export the custom widget from the old version and import it to the latest one.
 
 Finally, you can see how this custom widget work in the following screenshot.
- <img src="screenShot_autocomplete.jpg"/>
+ <img src="screenShot_autocomplete2.jpg"/>
