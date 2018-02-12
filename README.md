@@ -22,8 +22,7 @@ User can then select the final value.
  Nota : the autocomplet key return only a Key. So it's not possible to the user to give "My new country" in the widget (in this situation, the widget return a "null" key), where the standard autocomplete return the text (because the standard autocomplete is only here to help the user to give a text).
  
  But because the version of AngularJS bundled in the latest version of BonitaBPM is 1.4.7, this bundled widget doesn't work properly as you expect while you composing Korean. Several work-arounds are known for this issue but still AngularJS version1.x have this issue. I checked that the version 1.2.0 worked but Bonitasoft maybe don't want to downgrade.
- One of the solution I found was here. https://github.com/angular/angular.js/issues/6656/#issuecomment-77684151. There are two way to apply this code block to the INPUT widget bonitasoft provide. The first one is to modify INPUT widget, but because I don't want to touch any codes in the opened source code, I had to think another way and that's the second way. This way is to create a custom widget based on the basic INPUT widget. Then create a .js file and add this file into assets. Even though next version of Bonita BPM is available, just you need to export the custom widget from the old version and import it to the latest one.
-
-Finally, you can see how this custom widget work in the following screenshot.
+ One of the solution I found was here. https://github.com/angular/angular.js/issues/6656/#issuecomment-77684151. Because I applied this config function for the 'bonitasoft.ui.widgets' module, any of INPUT and AUTOCOMPLETE widget will work well as long as you add the js file into a page, form or application.
+You may see how this custom widget works in the following screenshot.
 
 <img src="screenShot_autocomplete2.jpg"/>
